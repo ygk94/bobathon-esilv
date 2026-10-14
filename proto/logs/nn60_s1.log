@@ -1,0 +1,22 @@
+/Users/hugo/Projet/bobathon-esilv/proto/nn.py:38: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  s.enc=nn.TransformerEncoder(el,layers); s.head=nn.Sequential(nn.LayerNorm(d),nn.Linear(d,d),nn.GELU(),nn.Linear(d,1))
+0 19 3.9667 41
+0 39 3.7185 90
+0 59 3.7128 138
+/Users/hugo/Projet/bobathon-esilv/proto/nn.py:38: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  s.enc=nn.TransformerEncoder(el,layers); s.head=nn.Sequential(nn.LayerNorm(d),nn.Linear(d,d),nn.GELU(),nn.Linear(d,1))
+1 19 4.0845 48
+1 39 3.9316 97
+1 59 3.9381 145
+2 19 3.8055 48
+2 39 3.7152 96
+2 59 3.6916 144
+3 19 3.9432 48
+3 39 4.0146 96
+3 59 3.8846 144
+4 19 4.0505 48
+4 39 3.7731 96
+4 59 3.815 1739
+/Users/hugo/Projet/bobathon-esilv/proto/nn.py:73: RuntimeWarning: Mean of empty slice
+  pt=np.nanmean(tests,0); pred[F.is_test.values==1]=pt[F.is_test.values==1]
+NN OOF 3.8091440935551106

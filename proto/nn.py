@@ -5,7 +5,7 @@ ap=argparse.ArgumentParser(); ap.add_argument("--seed",type=int,default=0); ap.a
 ap.add_argument("--d",type=int,default=128); ap.add_argument("--layers",type=int,default=4); ap.add_argument("--p1",default="")
 ap.add_argument("--out",default="proto/nn0.pkl"); ap.add_argument("--drop",type=float,default=0.15); ap.add_argument("--folds",default="0,1,2,3,4")
 args=ap.parse_args(); torch.manual_seed(args.seed); np.random.seed(args.seed)
-torch.set_num_threads(8)
+torch.set_num_threads(6)
 F=D.copy(); F["t"]=F.age-F.age_at_diagnosis
 num=["age","t","age_at_diagnosis","ledd","time_since_intake_on","time_since_intake_off","on","off","sexM"]
 if args.p1:
